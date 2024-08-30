@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="facebookBase.LoginTestWithMultipleBrowser">
+      <class name="locators.ContainXpath">
         <methods>
-          <include name="openTest"/>
-          <include name="closeTest"/>
-          <include name="loginTest"/>
+          <include name="containTextMethod"/>
+          <include name="openFacebook"/>
         </methods>
-      </class> <!-- facebookBase.LoginTestWithMultipleBrowser -->
+      </class> <!-- locators.ContainXpath -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

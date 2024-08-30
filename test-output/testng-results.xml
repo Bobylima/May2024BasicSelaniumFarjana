@@ -2,38 +2,40 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-04T12:48:14 EDT" name="Default suite" finished-at="2024-08-04T12:48:28 EDT" duration-ms="13855">
+  <suite started-at="2024-08-29T19:38:24 EDT" name="Default suite" finished-at="2024-08-29T19:38:27 EDT" duration-ms="3058">
     <groups>
     </groups>
-    <test started-at="2024-08-04T12:48:14 EDT" name="Default test" finished-at="2024-08-04T12:48:28 EDT" duration-ms="13855">
-      <class name="facebookBase.LoginTestWithMultipleBrowser">
-        <test-method is-config="true" signature="openTest()[pri:0, instance:facebookBase.LoginTestWithMultipleBrowser@6dc17b83]" started-at="2024-08-04T12:48:14 EDT" name="openTest" finished-at="2024-08-04T12:48:17 EDT" duration-ms="3239" status="PASS">
+    <test started-at="2024-08-29T19:38:24 EDT" name="Default test" finished-at="2024-08-29T19:38:27 EDT" duration-ms="3058">
+      <class name="locators.ContainXpath">
+        <test-method is-config="true" signature="openFacebook()[pri:0, instance:locators.ContainXpath@7ec7ffd3]" started-at="2024-08-29T19:38:24 EDT" name="openFacebook" finished-at="2024-08-29T19:38:27 EDT" duration-ms="2942" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openTest -->
-        <test-method signature="loginTest()[pri:0, instance:facebookBase.LoginTestWithMultipleBrowser@6dc17b83]" started-at="2024-08-04T12:48:17 EDT" name="loginTest" finished-at="2024-08-04T12:48:28 EDT" duration-ms="10255" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- openFacebook -->
+        <test-method signature="containTextMethod()[pri:0, instance:locators.ContainXpath@7ec7ffd3]" started-at="2024-08-29T19:38:27 EDT" name="containTextMethod" finished-at="2024-08-29T19:38:27 EDT" duration-ms="49" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#login"}
-  (Session info: chrome=126.0.6478.182)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //a[contain(text(),Français (France))] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[contain(text(),Français (France))]' is not a valid XPath expression."}
+  (Session info: chrome=128.0.6613.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f719d1b39f0546104d3727ce73163350, findElement {value=login, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.182, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\Farjana\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52348/devtoo..., se:cdpVersion: 126.0.6478.182, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f719d1b39f0546104d3727ce73163350]]>
+Command: [d4acb32781866dfcd4eb90ffa4850a70, findElement {using=xpath, value=//a[contain(text(),Français (France))]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.85, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\Farjana\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:25520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:25520/devtoo..., se:cdpVersion: 128.0.6613.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d4acb32781866dfcd4eb90ffa4850a70]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login"}
-  (Session info: chrome=126.0.6478.182)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //a[contain(text(),Français (France))] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[contain(text(),Français (France))]' is not a valid XPath expression."}
+  (Session info: chrome=128.0.6613.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f719d1b39f0546104d3727ce73163350, findElement {value=login, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.182, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\Farjana\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52348/devtoo..., se:cdpVersion: 126.0.6478.182, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f719d1b39f0546104d3727ce73163350
+Command: [d4acb32781866dfcd4eb90ffa4850a70, findElement {using=xpath, value=//a[contain(text(),Français (France))]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.85, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\Farjana\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:25520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:25520/devtoo..., se:cdpVersion: 128.0.6613.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d4acb32781866dfcd4eb90ffa4850a70
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -48,7 +50,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at facebookBase.LoginTestWithMultipleBrowser.loginTest(LoginTestWithMultipleBrowser.java:23)
+at locators.ContainXpath.containTextMethod(ContainXpath.java:18)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -77,15 +79,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeTest()[pri:0, instance:facebookBase.LoginTestWithMultipleBrowser@6dc17b83]" started-at="2024-08-04T12:48:28 EDT" name="closeTest" finished-at="2024-08-04T12:48:28 EDT" duration-ms="301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTest -->
-      </class> <!-- facebookBase.LoginTestWithMultipleBrowser -->
+        </test-method> <!-- containTextMethod -->
+      </class> <!-- locators.ContainXpath -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
